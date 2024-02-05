@@ -17,7 +17,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix {zoom: 1}
+.clearfix {zoom: 0.5}
 .clearfix:after {
     content: '.';
     clear: both;
@@ -33,7 +33,7 @@ html {
 
 .row {
     max-width: 1140px;
-    margin:0 auto ;
+    margin: 0 auto;
 }
 
 section {
@@ -220,19 +220,20 @@ header {
 /* -------- MEALS --------*/
 
 .section-meals {
-    padding-top: 250px;
+    padding-bottom: 0;
 }
 
 
 .meals-showcase {
     list-style: none;
     width: 100%;
+    /* flex-direction: row; */
+    display: flex;
 
 }
 
 .meals-showcase li {
     display: block;
-    float: left;
     width: 25%;
 }
 
@@ -262,9 +263,10 @@ header {
 /* HOW IT WOKS */
 /* ----------------------------------*/
 
-/* .section-steps {
-    background-color:#bc2c2c;
-} */
+.section-steps {
+    background-color:#e2e1e1;
+    flex-direction: row;
+}
 
 
 .steps-box:first-child {
@@ -308,4 +310,8 @@ header {
     height: 50px ;
     width:auto ;
     margin-right: 10px;
+}
+
+.city-feature {
+
 }
