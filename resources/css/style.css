@@ -418,11 +418,23 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
 }
 
 .plant-box div {
     padding: 15px;
     border-bottom: 1px solid #c8c8c8;
+}
+
+
+.plant-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plant-box div:last-child {
+    text-align: center;
+    border: 0;
 }
 
 .plant-price {
@@ -438,4 +450,12 @@ cite img {
 }
 .plant-price-meal {
     font-size: 80%;
+}
+
+.plant-box ul {
+    list-style: none;
+}
+
+.plant-box ul li {
+    padding: 5px 0;
 }
